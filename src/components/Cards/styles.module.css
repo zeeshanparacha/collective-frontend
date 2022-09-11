@@ -1,0 +1,72 @@
+.container {
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 100%;
+    padding: 18px 24px;
+    box-shadow: 0px 0px 4px rgb(#FFFFFF, 0.5);
+    position: relative;
+    min-height: 180px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 300;
+    font-size: 12px;
+    color: #808080;
+    border-bottom: 1px solid #f7f7f7;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.files {
+    margin-bottom: 10px;
+}
+
+.files h1 {
+    background-color: #f7f7f7;
+    font-size: 12px;
+    padding: 8px;
+    font-weight: 500;
+    color: #2d2d2d;
+}
+
+.files .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0px;
+}
+
+.files .content p {
+    font-size: 14px;
+    color: #808080;
+    font-weight: 400;
+}
+
+.files .content .tag {
+    background-color: rgba(255, 217, 0, 0.521);
+    padding: 6px 15px;
+    border-radius: 30px 5px 5px 30px;
+    color: #2d2d2d;
+    font-size: 13px;
+}
+
+.forks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 10px;
+    right: 28px;
+}
+
+.forks button {
+    background: none;
+    border: none;
+    color: #0073a7;
+    cursor: pointer;
+    margin-top: 10px;
+}

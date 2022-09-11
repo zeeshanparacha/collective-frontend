@@ -1,0 +1,25 @@
+.container {
+    background: #FFFFFF;
+    border-radius: 5px;
+    max-width: 500px;
+    padding: 18px 24px;
+    box-shadow: 0px 0px 4px rgb(#FFFFFF, 0.5);
+    position: relative;
+    min-height: 180px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+.container button {
+    background: none;
+    border: none;
+    margin-top: auto;
+    text-align: right;
+    cursor: pointer;
+}

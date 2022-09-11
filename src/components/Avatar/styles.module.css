@@ -1,0 +1,28 @@
+.avatar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 14px;
+  line-height: 18px;
+  color: #262626;
+}
+
+.subtitle {
+  color: #808080;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "DM Mono", monospace;
+}
+
+.avatar img {
+  margin-right: 10px;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+}
