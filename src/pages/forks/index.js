@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Fork from "../../components/Forks";
 import Loader from "../../components/Loader";
 import { fetchForks } from "../../store/effects.js/gists";
-import { clear } from "../../store/actions/gists";
+import { clearForks } from "../../store/actions/gists";
 
 import { useParams, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css"
@@ -23,7 +23,7 @@ const Forks = () => {
     const { loading, error, forks } = state;
 
     const _handleBack = () => {
-        dispatch(clear())
+        dispatch(clearForks())
         navigate("/")
     }
 

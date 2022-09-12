@@ -5,6 +5,8 @@ import Label from "../../components/Label";
 import Loader from "../../components/Loader";
 import Search from "../../components/Search";
 import { fetchGistsByUsername } from "../../store/effects.js/gists";
+import { clearGists } from "../../store/actions/gists";
+
 import styles from "./styles.module.css";
 
 const Gists = () => {
@@ -16,6 +18,7 @@ const Gists = () => {
 
     const _handleSearch = () => {
         if (!query) return false;
+        dispatch(clearGists())
         dispatch(fetchGistsByUsername(query))
     }
 

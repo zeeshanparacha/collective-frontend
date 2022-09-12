@@ -17,8 +17,10 @@ export const gists = (state = INITIAL_STATE, action) => {
       return { ...state, forks: action.payload, loading: false, error: "" };
     case constants.ERROR:
       return { ...state, loading: false, error: action.payload };
-    case constants.CLEAR:
+    case constants.CLEAR_FORKS:
       return { ...state, loading: false, error: "", forks: [] };
+    case constants.CLEAR_GISTS:
+      return { ...state, loading: false, error: "", gists: [] };
     default:
       return state;
   }

@@ -10,8 +10,12 @@ export const searchForksById = (data) => ({
   payload: data,
 });
 
-export const clear = () => ({
-  type: constants.CLEAR,
+export const clearForks = () => ({
+  type: constants.CLEAR_FORKS,
+});
+
+export const clearGists = () => ({
+  type: constants.CLEAR_GISTS,
 });
 
 
